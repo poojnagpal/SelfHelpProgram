@@ -1,0 +1,20 @@
+<div class="col-sm-3 single-post-card" id=<%= sections_path %>>
+  <div class="card">
+    <div class="card-block">
+      <h4 class="post-text">
+        <%= truncate(section.name, :length => 1000) %>
+          <div>
+            <h3><%= section.description %></h3> 
+          </div>
+          <%=link_to "More about", section_path(section) %>
+
+      </h4>
+      <div class="post-content">
+        <div class="posted-by">User <%= @sections.name %></div>
+        <h3><%= @sections.name %></h3> 
+        <h3><%= section.description %></h3> 
+        <%= link_to "I'm interested", section_path, class: 'interested' %>
+      </div>
+    </div>
+  </div><!-- card -->
+</div><!-- col-sm-3 -->

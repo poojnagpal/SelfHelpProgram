@@ -1,0 +1,40 @@
+<div class="navbar-default" role="navigation">
+<div class="navbar-header">
+
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">links toggle button</span>
+        <span class="mdl-color--white white icon-bar"></span>
+        <span class="mdl-color--white white icon-bar"></span>
+        <span class="mdl-color--white icon-bar"></span>
+    </button>
+    <%= link_to 'Self Paced Learning Modules', root_path, class: 'navbar-brand' %>
+    
+
+    <%# <a href="#"><span class="navbar-brand">Self Paced Learning Modules</span></a> %>
+    <%# <a class="navbar-brand" href="#">Brand</a> %>
+
+</div>
+<div class="navbar-collapse collapse">
+    <ul class="dropdown-menu" role="menu">
+          <li><%= link_to 'Edit Profile', edit_user_registration_path %></li>
+          <li><%= link_to 'Log out', destroy_user_session_path, method: :delete %></li>
+    </ul>
+
+    <ul class="nav navbar-nav" style="float: right;">
+        <li><a href="/login">Login</a></li>
+        <li><a href="/logout">Logout</a></li>
+        <li><a href="/users/sign_up">Signup</a></li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">
+                Profile<span class="mdi mdi-chevron-down"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+                <li role="presentation"><a href="/login">First Item</a></li>
+                <li role="presentation"><a href="#">Second Item</a></li>
+                <li role="presentation"><a href="#">Third Item</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+       

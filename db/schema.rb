@@ -10,7 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200104150730) do
+ActiveRecord::Schema.define(version: 20200104135408) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
@@ -20,8 +23,8 @@ ActiveRecord::Schema.define(version: 20200104150730) do
   create_table "programs", force: :cascade do |t|
     t.string "name"
     t.text "description"
-    t.integer "category_id"
-    t.integer "user_id"
+    t.bigint "category_id"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["category_id"], name: "index_programs_on_category_id"
@@ -32,12 +35,13 @@ ActiveRecord::Schema.define(version: 20200104150730) do
     t.string "name"
     t.text "description"
     t.integer "order_index"
-    t.integer "category_id"
-    t.integer "user_id"
+    t.bigint "program_id"
+    t.bigint "category_id"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "program_id"
     t.index ["category_id"], name: "index_sections_on_category_id"
+    t.index ["program_id"], name: "index_sections_on_program_id"
     t.index ["user_id"], name: "index_sections_on_user_id"
   end
 

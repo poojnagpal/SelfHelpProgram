@@ -1,20 +1,23 @@
-#Technologies
+# Technologies
 Ruby 2.5.6
 Rails 6.0.0
 Postgresql
 
-#Installation
-  Local Development
+# Installation
+  ## Local Development
+  
   Clone the repo
-    git clone 
-    cd unloop
+  ```
+    git clone {repo_github link}
+    cd ...
+    ```
 
-#Install dependencies
+# Install dependencies
   ```
   bundle install
   yarn install
 ```
-#Setup database
+# Setup database
   ```
   rails db:setup
   ```

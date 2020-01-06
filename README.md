@@ -10,13 +10,15 @@ Postgresql
   ```
     git clone {repo_github link}
     cd ...
-    ```
+   ```
 
 # Install dependencies
+
   ```
-  bundle install
-  yarn install
-```
+    bundle install
+    yarn install
+  ```
+
 # Setup database
   ```
   rails db:setup

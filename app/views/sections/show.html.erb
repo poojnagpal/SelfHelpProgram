@@ -1,9 +1,23 @@
-<div class="col-sm-3 single-post-card" id=<%= program_path %>>
-  <div class="card">
-    <div class="card-block">
-      <h4 class="post-text">
-        <%= truncate(@section.description, :length => 1000) %>
-      </h4>
+<div id="main-content" class="col-sm-9">
+
+  <div class="col-sm-3 section-post-card" id=<%= program_path %>>
+    <div class="card">
+      <div class="card-block">
+        <h4 class="post-text">
+          <%= @section.name %>
+        </h4>
+      </div>
+    </div><!-- card -->
+  <%= link_to "Next Section", @section.next  %>
+  <%= link_to "Previous Section", @section.previous %>
+  </div><!-- col-sm-3 -->
+  <%= @section.description%>
     </div>
-  </div><!-- card -->
-</div><!-- col-sm-3 -->
+      <img src="/.../no_image_attached.jpg" alt="Section Image Here" width="200"
+         height="180">
+    </div>
+  <div>
+  <%= link_to "Exit Learning", programs_path %>
+  </div>
+</div>
+

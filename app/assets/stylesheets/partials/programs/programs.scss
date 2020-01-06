@@ -1,0 +1,78 @@
+.single-post-card {
+    min-height: 300px;
+    max-height: 300px;
+    box-shadow: 1px 1px 4px rgba(29, 112, 36, 0.3);
+    color: black;
+    padding: 10px;
+    text-align: left;
+    transition: border 0.1s, background 0.5s;
+    .post-text {
+      color: black;
+    }
+    a, a:active, a:hover {
+      color: black;
+    }
+    &:hover {
+      cursor: pointer;
+      background: rgb(10, 126, 29);
+      box-shadow: none;
+      border-radius: 1%;
+    }
+  }
+  .section-post-card {
+    min-height: 300px;
+    max-height: 300px;
+    background: black;
+    box-shadow: 1px 1px 4px rgba(29, 112, 36, 0.3);
+    color: white;
+    padding: 10px;
+    text-align: left;
+    transition: border 0.1s, background 0.5s;
+    .section-post-text {
+      color: white;
+    }
+    a, a:active, a:hover {
+      color: black;
+    }
+    &:hover {
+      cursor: pointer;
+      background: rgb(10, 126, 29);
+      box-shadow: none;
+      border-radius: 1%;
+    }
+  }
+
+
+  .more-about {
+    color: black
+  }
+  .class_css:link { 
+    color: #0000FF;
+  }
+  .class_css:visited { 
+    color: rgb(148, 85, 85);
+  }
+  .class_css:hover { 
+    color: rgb(204, 204, 204);
+  }
+  .class_css:active { 
+    color: #9cbcf0;
+}
+  #class a:hover {
+    font-family: "Brush Script MT";
+    font-size: 22px;
+    color: #00C;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+#class a:active {
+    font-family: "Brush Script MT";
+    font-size: 22px;
+    color: #00C;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .post-content {
+    display: none;
+  }

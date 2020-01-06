@@ -37,6 +37,11 @@ gem 'react-rails'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'jquery-rails'
 gem 'devise'
+gem 'bootstrap'
+gem 'bootstrap_form'
+gem "paperclip", "~> 4.1.1"
+
+
 # gem 'bootstrap_form'
 
 

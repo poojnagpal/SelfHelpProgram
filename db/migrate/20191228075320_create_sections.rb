@@ -4,7 +4,6 @@ class CreateSections < ActiveRecord::Migration[5.1]
       t.string :name
       t.text :description
       t.integer :order_index
-      t.image :image
       t.belongs_to :program, index: true
       t.belongs_to :category, index: true
       t.belongs_to :user, index: true

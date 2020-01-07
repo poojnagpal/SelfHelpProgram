@@ -33,3 +33,7 @@ Postgresql
   rake db:migrate
   rake db:reset
 ```
+Run locally
+ ```
+ rails s
+ ```

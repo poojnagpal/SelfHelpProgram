@@ -1,24 +1,34 @@
-# README
+# Technologies
+Ruby 2.5.6
+Rails 6.0.0
+Postgresql
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Installation
+  ## Local Development
+  
+  Clone the repo
+  ```
+    git clone {repo_github link}
+    cd ...
+   ```
 
-Things you may want to cover:
+# Install dependencies
 
-* Ruby version
+  ```
+    bundle install
+    yarn install
+  ```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Setup database
+  ```
+  rails db:setup
+  ```
+  This runs db:create, db:schema:load, and db:seed
+  
+  OR
+  
+  ```
+  rake db:migrate
+  rake db:reset
+  rake db:seed
+```

@@ -1,6 +1,8 @@
+Deployed App: https://desolate-castle-36988.herokuapp.com/ 
+
 # Technologies
 Ruby 2.5.6
-Rails 6.0.0
+Rails, '~> 5.1.7'
 Postgresql
 
 # Installation
@@ -30,5 +32,8 @@ Postgresql
   ```
   rake db:migrate
   rake db:reset
-  rake db:seed
 ```
+Run locally
+ ```
+ rails s
+ ```

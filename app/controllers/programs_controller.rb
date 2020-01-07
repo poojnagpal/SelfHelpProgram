@@ -26,13 +26,6 @@ class ProgramsController < ApplicationController
         # default: render 'new' template
     end
         
-    # def new
-    #     respond_to do |format|
-    #     format.html
-    #     format.js
-    #     end
-    # end
-
 
     # def create
     #     @program = Program.create!(program_params)

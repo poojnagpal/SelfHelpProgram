@@ -13,7 +13,7 @@ class ProgramsController < ApplicationController
     def show
         @id = params[:id] # retrieve program ID from URI route
         @program = Program.find(@id)
-        @sections = Section.where('program_id' => @id)
+        @sections = Section.where('user_id' => @id)
         puts "User name: #{@sections}"
 
     end

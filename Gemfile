@@ -39,7 +39,7 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'bootstrap'
 gem 'bootstrap_form'
-gem "paperclip", "~> 4.1.1"
+gem "paperclip", "~> 5.2.0"
 
 
 # gem 'bootstrap_form'
